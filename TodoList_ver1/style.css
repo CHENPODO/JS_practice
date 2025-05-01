@@ -1,0 +1,38 @@
+CSS 自訂變數（CSS variables）
+🔸 :root 是什麼？
+/* :root 是 CSS 的一個選擇器，代表整份 HTML 文件的根元素（基本上就是 <html>）。
+
+把變數定義在 :root 裡，等於整個網站都可以用這些變數。
+
+🔸 --變數名稱 是什麼？
+--moz-background、--primary-color 這些都是自訂的 CSS 變數。
+
+定義方式是：--變數名稱: 值;
+
+使用時可以這樣用：background-color: var(--primary-color); */
+
+
+:root {
+	--background: #101114; /* 背景顏色（深色） */
+	--primary-color: #1c1d20; /* 主要用色，可能是主區塊背景 */
+	--secondary-color: #4a4d57; /* 次要顏色，可能是邊框或陰影 */
+	--accent-color: #00ffc4; /* 強調色（亮綠色），可能用在按鈕或 icon 上 */
+	--text-color: #f9f9f9; /* 字體顏色（接近白色） */
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+html {
+	font-size: 16pt;
+	font-family: "Segoe UI", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* 使用系統字型，這樣會比較快 */
+	color: var(--text-color); /* 使用變數定義的字體顏色 */
+}
+body {
+	background-color: var(--background, #101114);
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
