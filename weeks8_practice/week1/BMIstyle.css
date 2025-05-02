@@ -1,25 +1,59 @@
+body {
+	background-color: rgba(0, 0, 0, 0.092);
+	font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+h1 {
+	text-align: center;
+}
 .container {
+	margin: 0 auto;
+	width: 500px;
+	height: 280px;
+	border-radius: 18px;
 	display: flex;
+	background-image: linear-gradient(to right, #cf2424, #515fc8);
 	justify-content: center;
 	align-items: center;
+	box-shadow: 10px 12px 8px rgba(0, 0, 0, 0.2);
+}
+.screen {
+	display: flex;
+	background-color: rgb(255, 255, 255);
+	width: 350px;
+	justify-content: center;
+	height: 280px;
 }
 .background {
 	display: flex;
-	background-color: rgb(211, 202, 221);
-	padding: 30px;
+	padding: 10px;
+	width: 400px;
 	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .box {
 	display: flex;
+	margin: 0 auto;
 	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 .left-box {
-	margin: 3px 8px;
+	margin: 13px 8px;
+	padding: 10px;
+}
+.left-box:hover {
+	border-radius: 10px;
+	background: rgba(128, 128, 128, 0.084);
+	cursor: pointer;
 }
 
 .right-box {
-	margin: 3px 8px;
+	margin: 0px 8px;
+	padding: 10px;
+}
+.right-box:hover {
+	border-radius: 10px;
+	background: rgba(128, 128, 128, 0.084);
+	cursor: pointer;
 }
 
 input {
@@ -28,6 +62,7 @@ input {
 	border: none;
 	text-align: center;
 	border-radius: 5px;
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .sent-btn {
@@ -37,6 +72,14 @@ input {
 }
 .sent-btn button {
 	border: none;
-	padding: 5px 8px;
+	padding: 10px 18px;
 	border-radius: 5px;
+}
+.sent-btn button:hover {
+	background-color: rgb(0, 0, 0);
+	color: white;
+	cursor: pointer;
+}
+.text {
+	font-weight: 700;
 }
