@@ -35,7 +35,7 @@ calculate.addEventListener("click", () => {
 	// step 5 : 判斷式
 	if (bmi < 18.5) {
 		BMIStatus = "過輕"
-	} else if (bmi <= 18.5 && bmi < 24) {
+	} else if (bmi >= 18.5 && bmi < 24) {
 		BMIStatus = "適中"
 	} else {
 		BMIStatus = "過重"
