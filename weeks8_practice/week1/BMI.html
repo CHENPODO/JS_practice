@@ -9,6 +9,8 @@
 	</head>
 	<body>
 		<h1>BMI</h1>
+		<p class="notic">注意身高要換算成公尺</p>
+
 		<div class="container">
 			<div class="screen">
 				<div class="background">
@@ -22,11 +24,15 @@
 							<input type="number" id="weight" placeholder="kg" />
 						</div>
 						<div class="sent-btn">
-							<button type="button">計算</button>
+							<button type="button" id="calculate">計算</button>
 						</div>
-					</div>
+					
 				</div>
 			</div>
+			<div class="result-box">
+				<span class="text">BMI</span>
+				<input type="text" id="result" disabled />
+		</div>
 		</div>
 	</body>
 </html>
