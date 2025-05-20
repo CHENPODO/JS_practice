@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>圓面積</title>
+		<style>
+			.container {
+				margin: 10px auto;
+				width: 100px;
+				height: 100px;
+				background-color: #4e89ae;
+				border-radius: 50%;
+			}
+			.text-box {
+				display: flex;
+				flex-direction: column;
+				background-color: #b0c0d6;
+				width: 300px;
+				margin: 5px auto;
+				border-radius: 5px;
+				padding: 20px;
+			}
+			.radius {
+				text-align: center;
+				padding: 10px;
+				font-weight: 700;
+			}
+			input {
+				margin: 0 auto;
+				padding: 8px 0px;
+				width: 150px;
+				text-align: center;
+				border: none;
+				border-radius: 5px;
+			}
+
+			.result {
+				text-align: center;
+				font-weight: 700;
+				display: flex;
+				color: blue;
+				flex-direction: column;
+			}
+			.res-box {
+				margin: 10px auto;
+				border-radius: 5px;
+				width: 150px;
+				padding: 10px;
+				background-color: #fff;
+			}
+			/* 結果區塊效果 */
+			#result {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				height: 100px;
+				width: 280px;
+				margin: 10px auto;
+				font-size: 1.1rem;
+				font-weight: bold;
+				border-radius: 8px;
+				transition: all 0.3s ease;
+				padding: 10px;
+			}
+
+			/* 成功訊息綠色背景 */
+			.success {
+				background-color: #d0f0d0;
+				color: #206020;
+				border: 2px solid #80c080;
+			}
+
+			/* 錯誤訊息紅色背景 */
+			.error {
+				background-color: #fdd;
+				color: #900;
+				border: 2px solid #e88;
+			}
+
+			/* 按鈕效果 */
+			button {
+				width: 150px;
+				padding: 10px 15px;
+				margin: 10px auto;
+				border: none;
+				border-radius: 5px;
+				background-color: #4e89ae;
+				color: #fff;
+				font-weight: bold;
+				cursor: pointer;
+				transition: background-color 0.3s;
+			}
+
+			button:hover {
+				background-color: #386d9d;
+			}
+		</style>
+		<script defer src="./circle.js"></script>
+	</head>
+	<body>
+		<div class="container"></div>
+		<div class="text-box">
+			<span class="radius">半徑:</span>
+			<input type="text" id="radius" placeholder="請輸入半徑" />
+			<button id="btn">計算面積</button>
+			<div class="result">
+				<span class="result">結果為...</span>
+				<span class="res-box" id="result"></span>
+			</div>
+		</div>
+	</body>
+</html>
