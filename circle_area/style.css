@@ -1,0 +1,40 @@
+h2 {
+	text-align: center;
+}
+.box {
+	background-color: rgba(255, 170, 0, 0.439);
+	margin: 10px auto;
+	text-align: center;
+	padding: 20px;
+	width: 400px;
+}
+#radius {
+	border: none;
+	padding: 5px;
+}
+#btn {
+	border: none;
+	padding: 5px 10px;
+	font-weight: 700;
+	background-color: #65a082;
+	color: white;
+	border-radius: 5px;
+}
+
+#btn:hover {
+	background-color: #56886e;
+	cursor: pointer;
+}
+
+#result {
+	padding: 10px;
+}
+.success {
+	background-color: #c6edd9;
+	border: #56886e 3px solid;
+	border-radius: 3px;
+}
+.error {
+	background-color: rgba(229, 116, 116, 0.423);
+	border: red 3px solid;
+}
